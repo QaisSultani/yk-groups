@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     "YK Groups is a multi-division enterprise delivering events, travel, trading, and printing solutions with a decade of trusted experience.",
   icons: {
     icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
