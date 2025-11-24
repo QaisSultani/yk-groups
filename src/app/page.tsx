@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const divisions = [
     {
@@ -50,8 +52,15 @@ export default function Home() {
         <header className="flex flex-col gap-10">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-lg font-black uppercase tracking-tight text-slate-950 shadow-lg shadow-slate-900/40">
-                YK
+              <div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/5 p-2 shadow-lg shadow-slate-900/40 ring-1 ring-white/10">
+                <Image
+                  src="/logo.png"
+                  alt="YK Groups logo"
+                  fill
+                  sizes="56px"
+                  className="object-contain"
+                  priority
+                />
               </div>
               <div>
                 <p className="text-lg font-semibold text-white">YK Groups</p>
@@ -82,16 +91,16 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="tel:+923139659436"
+                  href="tel:+923010213725"
                   className="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 transition hover:-translate-y-0.5 hover:shadow-cyan-400/40"
                 >
-                  Call +92 313 9659436
+                  Call +92 301 0213725
                 </a>
                 <a
-                  href="mailto:Ykgroups.pk@gmail.com"
+                  href="mailto:ykgroups.pk@gmail.com"
                   className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-slate-50 transition hover:border-cyan-200/70 hover:text-cyan-100"
                 >
-                  Email Ykgroups.pk@gmail.com
+                  Email ykgroups.pk@gmail.com
                 </a>
               </div>
             </div>
@@ -276,7 +285,7 @@ export default function Home() {
                 Call +92 301 0213725
               </a>
               <a
-                href="mailto:Ykgroups.pk@gmail.com"
+                href="mailto:ykgroups.pk@gmail.com"
                 className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200/70 hover:text-cyan-100"
               >
                 Email Us

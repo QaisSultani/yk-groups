@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "YK Groups | Events, Travel, Trading & Printing",
   description:
     "YK Groups is a multi-division enterprise delivering events, travel, trading, and printing solutions with a decade of trusted experience.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
